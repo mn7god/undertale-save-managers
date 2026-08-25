@@ -18,6 +18,17 @@ Use the arrow keys (⬆ and ⬇) to move between options.
 
 And use ENTER⬑ to select what you want.
 
+## Installation
+
+If you want run the python script install python and this libs with pip
+
+```cmd
+pip install requirements.txt
+py script.py
+```
+
+Or if you dont wanna install python and dependencies you can run the executable instead.
+
 ### NOTE
 Maybe in future i made and DELTARUNE save manager too
 
