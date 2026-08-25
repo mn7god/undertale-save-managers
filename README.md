@@ -30,5 +30,5 @@ py script.py
 Or if you dont wanna install python and dependencies you can run the executable instead.
 
 ### NOTE
-Maybe in future i made and DELTARUNE save manager too
+Maybe in future i made an DELTARUNE save manager too
 
