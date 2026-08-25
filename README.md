@@ -13,7 +13,9 @@ I built these tools entirely in python3 using three external libraries, which yo
 ## Functions
 
 The programs in this repository have many features, but the main ones include backing up your original save file, loading custom saves, manually or interactively modifying save files, and customizing the path to the game's executable. Navigation is simple:
+
 Use the arrow keys (⬆ and ⬇) to move between options.
+
 And use ENTER⬑ to select what you want.
 
 ### NOTE
