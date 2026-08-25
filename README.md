@@ -4,7 +4,7 @@
 
 I am not affiliated with Toby Fox or Undertale, nor are any of my projects affiliated with them. This is an independent project created solely for manipulating and editing save files from games or fan games inspired by Toby Fox’s works. Please be aware that these scripts or executables can manipulate save files on your computer and create files on your internal storage. If you’d like a thorough analysis, the project includes the complete scripts used in this repository. Be careful with theses programs and use it with your own risk.
 
-## Introdution
+## Introduction
 
 In short, I wanted to start this project because I noticed a certain gap in the undertale and fan games community, so i decided to create save managers where you can backup an important save, load custom saves, launch the game from within the program, and modify important save attributes like ATK, DEF, EXP. all of this without having to go online every time, using a lightweight and practical tool right on your computer.
 
