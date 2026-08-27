@@ -114,26 +114,28 @@ items_ids = {
     "53": "The Locket",
     "64": "temy armor"
 }
+
 w_ids = {
     '3': 'Stick',
     '13': 'Toy Knife',
     '14': 'Tough Glove',
-    '27': 'Ballet Shoes',
+    '25': 'Ballet Shoes',
     '45': 'Torn Notebook',
     '47': 'Burnt Pan',
     '49': 'Empty Gun',
     '51': 'Worn Dagger',
     '52': 'Real Knife'
 }
+
 a_ids = {
     '4': 'Bandage',
     '12': 'Faded Ribbon',
     '15': 'Manly Bandana',
     '24': 'Old Tutu',
-    '44': 'Cloudy Glasses',
+    '44': 'Cloudy Glasses',  
     '46': 'Stained Apron',
     '48': 'Cowboy Hat',
-    '53': 'Heart Locket'
+    '50': 'Heart Locket' 
 }
 
 ritems_id = {
@@ -158,7 +160,7 @@ ritems_id = {
     "Punch Card": "26",
     "Annoying Dog": "27",
     "Dog Salad": "28",
-    "Dog Residue": "34",  
+    "Dog Residue": "30", 
     "Astronaut Food": "35",
     "Instant Noodles": "36",
     "Crab Apple": "37",
@@ -216,12 +218,12 @@ ra_ids = {
     "Faded Ribbon": "12",
     "Manly Bandana": "15",
     "Old Tutu": "24",
-    "Cloudy Glasses": "44",
+    "Butty Glasses": "44",  
     "Stained Apron": "46",
     "Cowboy Hat": "48",
-    "Heart Locket": "53"
+    "Heart Locket": "50"  
 }
-    
+
 all_in_one = {
   "Nothing": "0",
   "Monster Candy": "1",
@@ -267,10 +269,10 @@ all_in_one = {
   "Burnt Pan": "47",
   "Cowboy Hat": "48",
   "Empty Gun": "49",
-  "Heart Locket": "50",
+  "Heart Locket": "50",  
   "Worn Dagger": "51",
   "Real Knife": "52",
-  "Heart Locket": "53",
+  "The Locket": "53", 
   "Bad Memory": "54",
   "Dream": "55",
   "Undyne's Letter": "56",
