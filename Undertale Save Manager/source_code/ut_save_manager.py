@@ -834,7 +834,7 @@ def modify_save_file2():
                 
             input('<-Back')
             
-        elif resp == "Equipped Weapon":
+        elif resp == "Equiped Weapon":
             print(f"[*] Current Equipped Weapon: {eqp_w}")
             new_eqpw = inquirer.select(
                 message="Your new value for EQP Weapon:",
@@ -849,7 +849,7 @@ def modify_save_file2():
                 
             input('<-Back')
             
-        elif resp == "Equipped Armor":
+        elif resp == "Equiped Armor":
             print(f"[*] Current Equipped Armor: {eqp_a}")
             new_eqpa = inquirer.select(
                 message="Your new value for EQP Armor:",
