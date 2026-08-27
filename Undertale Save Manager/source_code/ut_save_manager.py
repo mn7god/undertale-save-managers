@@ -117,7 +117,7 @@ items_ids = {
 w_ids = {
     '3': 'Stick',
     '13': 'Toy Knife',
-    '5': 'Tough Glove',
+    '14': 'Tough Glove',
     '7': 'Ballet Shoes',
     '45': 'Torn Notebook',
     '47': 'Burnt Pan',
@@ -202,7 +202,7 @@ ritems_id = {
 rw_ids = {
     "Stick": "3",
     "Toy Knife": "13",
-    "Tough Glove": "5",
+    "Tough Glove": "14",
     "Ballet Shoes": "7",
     "Torn Notebook": "45",
     "Burnt Pan": "47",
@@ -415,19 +415,19 @@ def extract_specs(save_path: Path):
     eqp_w = s_data[28]
     eqp_a = s_data[29]
     full_tags = {
-        'Player Name': user,
-        'ATK (Native)': atk_p,
-        'ATK (Weapon)': atk_s,
-        'DEF (Native)': def_p,
-        'DEF (Armor)': def_s,
-        'Current HP': hp,
-        'Max HP': maxhp,
-        'LV (LOVE)': love,
-        'Souls Speed': soul_s,
-        'EXP (Experience)': exp,
-        'Gold': gold,
-        'Equiped Weapon': w_ids[eqp_w],
-        'Equiped Armor': a_ids[eqp_a]
+        'Player Name': user.strip(),
+        'ATK (Native)': atk_p.strip(),
+        'ATK (Weapon)': atk_s.strip(),
+        'DEF (Native)': def_p.strip(),
+        'DEF (Armor)': def_s.strip(),
+        'Current HP': hp.strip(),
+        'Max HP': maxhp.strip(),
+        'LV (LOVE)': love.strip(),
+        'Souls Speed': soul_s.strip(),
+        'EXP (Experience)': exp.strip(),
+        'Gold': gold.strip(),
+        'Equiped Weapon': w_ids[eqp_w.strip()],
+        'Equiped Armor': a_ids[eqp_a.strip()]
         
     }
     return full_tags
@@ -585,31 +585,31 @@ def modify_save_file2():
         eqp_a = s_data[29]
         g_time = s_data[548]
         full_tags = {
-            'Player Name': user,
-            'ATK (Native)': atk_p,
-            'ATK (Weapon)': atk_s,
-            'DEF (Native)': def_p,
-            'DEF (Armor)': def_s,
-            'Current HP': hp,
-            'Max HP': maxhp,
-            'LV (LOVE)': love,
-            'Soul Speed': soul_s,
-            'EXP (Experience)': exp,
-            'Gold': gold,
-            'Equiped Weapon': w_ids[eqp_w],
-            'Equiped Armor': a_ids[eqp_a],
-            'Kills': kills,
-            'Playing Time': g_time,
+            'Player Name': user.strip(),
+            'ATK (Native)': atk_p.strip(),
+            'ATK (Weapon)': atk_s.strip(),
+            'DEF (Native)': def_p.strip(),
+            'DEF (Armor)': def_s.strip(),
+            'Current HP': hp.strip(),
+            'Max HP': maxhp.strip(),
+            'LV (LOVE)': love.strip(),
+            'Soul Speed': soul_s.strip(),
+            'EXP (Experience)': exp.strip(),
+            'Gold': gold.strip(),
+            'Equiped Weapon': w_ids[eqp_w.strip()],
+            'Equiped Armor': a_ids[eqp_a.strip()],
+            'Kills': kills.strip(),
+            'Playing Time': g_time.strip(),
         }
         slot_tags = {
-            'Item Slot 1': items_ids[item_1],
-            'Item Slot 2': items_ids[item_2],
-            'Item Slot 3': items_ids[item_3],
-            'Item Slot 4': items_ids[item_4],
-            'Item Slot 5': items_ids[item_5],
-            'Item Slot 6': items_ids[item_6],
-            'Item Slot 7': items_ids[item_7],
-            'Item Slot 8': items_ids[item_8]
+            'Item Slot 1': items_ids[item_1.strip()],
+            'Item Slot 2': items_ids[item_2.strip()],
+            'Item Slot 3': items_ids[item_3.strip()],
+            'Item Slot 4': items_ids[item_4.strip()],
+            'Item Slot 5': items_ids[item_5.strip()],
+            'Item Slot 6': items_ids[item_6.strip()],
+            'Item Slot 7': items_ids[item_7.strip()],
+            'Item Slot 8': items_ids[item_8.strip()]
         }
         slot_numbers={
             'Item Slot 1': 12,
@@ -1056,9 +1056,5 @@ def main():
         exec_tree[resp]()
 
 if path_test():
-    try:
-        main()
-    except KeyboardInterrupt:
-        print(f"[{RED}!{RESET}]: KeyboardInterrupt Detected.")
-    except Exception as e:
-        print(f"[{RED}!{RESET}]: Error: {str(e)}")
+    main()
+
