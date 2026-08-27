@@ -124,7 +124,8 @@ w_ids = {
     '47': 'Burnt Pan',
     '49': 'Empty Gun',
     '51': 'Worn Dagger',
-    '52': 'Real Knife'
+    '52': 'Real Knife',
+    '64': "temy armor"
 }
 
 a_ids = {
@@ -211,6 +212,7 @@ rw_ids = {
     "Empty Gun": "49",
     "Worn Dagger": "51",
     "Real Knife": "52"
+    "temy armor": "64"
 }
 
 ra_ids = {
