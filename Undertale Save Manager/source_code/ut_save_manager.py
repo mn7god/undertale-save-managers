@@ -118,7 +118,7 @@ w_ids = {
     '3': 'Stick',
     '13': 'Toy Knife',
     '14': 'Tough Glove',
-    '7': 'Ballet Shoes',
+    '27': 'Ballet Shoes',
     '45': 'Torn Notebook',
     '47': 'Burnt Pan',
     '49': 'Empty Gun',
@@ -203,7 +203,7 @@ rw_ids = {
     "Stick": "3",
     "Toy Knife": "13",
     "Tough Glove": "14",
-    "Ballet Shoes": "7",
+    "Ballet Shoes": "25",
     "Torn Notebook": "45",
     "Burnt Pan": "47",
     "Empty Gun": "49",
@@ -584,23 +584,6 @@ def modify_save_file2():
         eqp_w = s_data[28]
         eqp_a = s_data[29]
         g_time = s_data[548]
-        full_tags = {
-            'Player Name': user.strip(),
-            'ATK (Native)': atk_p.strip(),
-            'ATK (Weapon)': atk_s.strip(),
-            'DEF (Native)': def_p.strip(),
-            'DEF (Armor)': def_s.strip(),
-            'Current HP': hp.strip(),
-            'Max HP': maxhp.strip(),
-            'LV (LOVE)': love.strip(),
-            'Soul Speed': soul_s.strip(),
-            'EXP (Experience)': exp.strip(),
-            'Gold': gold.strip(),
-            'Equiped Weapon': w_ids[eqp_w.strip()],
-            'Equiped Armor': a_ids[eqp_a.strip()],
-            'Kills': kills.strip(),
-            'Playing Time': g_time.strip(),
-        }
         slot_tags = {
             'Item Slot 1': items_ids[item_1.strip()],
             'Item Slot 2': items_ids[item_2.strip()],
@@ -835,11 +818,11 @@ def modify_save_file2():
             input('<-Back')
             
         elif resp == "Equiped Weapon":
-            print(f"[*] Current Equipped Weapon: {eqp_w}")
+            print(f"[*] Current Equipped Weapon: {w_ids[eqp_w.strip()]}")
             new_eqpw = inquirer.select(
                 message="Your new value for EQP Weapon:",
                 choices=w_ids.values()
-            )
+            ).execute()
             try:
                 write_file0_save(save_path, 28, rw_ids[new_eqpw])
                 print(f"[{GREEN}*{RESET}]: Succefully injected value '{new_eqpw}' in UT file0!")
@@ -850,11 +833,11 @@ def modify_save_file2():
             input('<-Back')
             
         elif resp == "Equiped Armor":
-            print(f"[*] Current Equipped Armor: {eqp_a}")
+            print(f"[*] Current Equipped Armor: {a_ids[eqp_a.strip()]}")
             new_eqpa = inquirer.select(
                 message="Your new value for EQP Armor:",
                 choices=a_ids.values()
-            )
+            ).execute()
             try:
                 write_file0_save(save_path, 29, ra_ids[new_eqpa])
                 print(f"[{GREEN}*{RESET}]: Succefully injected value '{new_eqpa}' in UT file0!")
