@@ -124,8 +124,7 @@ w_ids = {
     '47': 'Burnt Pan',
     '49': 'Empty Gun',
     '51': 'Worn Dagger',
-    '52': 'Real Knife',
-    '64': "temy armor"
+    '52': 'Real Knife'
 }
 
 a_ids = {
@@ -136,7 +135,8 @@ a_ids = {
     '44': 'Cloudy Glasses',  
     '46': 'Stained Apron',
     '48': 'Cowboy Hat',
-    '50': 'Heart Locket' 
+    '50': 'Heart Locket',
+    '64': "temy armor" 
 }
 
 ritems_id = {
@@ -211,8 +211,7 @@ rw_ids = {
     "Burnt Pan": "47",
     "Empty Gun": "49",
     "Worn Dagger": "51",
-    "Real Knife": "52",
-    "temy armor": "64"
+    "Real Knife": "52"
 }
 
 ra_ids = {
@@ -223,7 +222,8 @@ ra_ids = {
     "Butty Glasses": "44",  
     "Stained Apron": "46",
     "Cowboy Hat": "48",
-    "Heart Locket": "50"  
+    "Heart Locket": "50",
+    "temy armor": "64"
 }
 
 all_in_one = {
