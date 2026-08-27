@@ -211,7 +211,7 @@ rw_ids = {
     "Burnt Pan": "47",
     "Empty Gun": "49",
     "Worn Dagger": "51",
-    "Real Knife": "52"
+    "Real Knife": "52",
     "temy armor": "64"
 }
 
