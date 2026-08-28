@@ -470,7 +470,7 @@ def load_file():
         print(f"[{GREEN}*{RESET}]: Original UT save file accepted.")
         copy = Path(inquirer.filepath(
             message="Please select your custom 'file0' to replace the original.",
-            default=str(user_base_path)+"\\",
+            default=user_ut_save_path,
             validate=PathValidator(is_file=True, message="This isnt a valid file.")
         ).execute()).absolute()
         
