@@ -470,7 +470,7 @@ def load_file():
         print(f"[{GREEN}*{RESET}]: Original UT save file accepted.")
         copy = Path(inquirer.filepath(
             message="Please select your custom 'file0' to replace the original.",
-            default=user_ut_save_path,
+            default=str(user_ut_save_path)+"\\",
             validate=PathValidator(is_file=True, message="This isnt a valid file.")
         ).execute()).absolute()
         
@@ -482,10 +482,10 @@ def load_file():
             try:
                 shutil.copy2(str(copy), str(resp))
                 print(f"[{GREEN}*{RESET}]: Custom UT save file replaced on target!") 
-            except Exception as e:
+            except Exception:
                  print(f"[{RED}!{RESET}]: Error while file replacement: {str(e)}")
                  
-    except Exception:
+    except Exception as e:
         print(f"[{RED}!{RESET}]: Invalid UT save file selected.")
     
     input("<-Back")
